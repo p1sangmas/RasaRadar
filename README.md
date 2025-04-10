@@ -49,6 +49,22 @@ RasaRadar is an iOS application that helps users discover and classify Malaysian
 3. Use the "Scan Food" button to capture an image of the food.
 4. View the classification result and tap "View Food Info" to see detailed information about the food.
 
+## Results
+
+![Training and Validation Accuracy](./showcase/rasaradar_result.png)
+
+The `MalaysianFoodClassifier.mlmodel` was trained using Apple's Create ML framework with the Malaysian Food Dataset. The training process achieved the following results:
+
+- **Training Accuracy**: 94.2%
+- **Validation Accuracy**: 93.2%
+- **Iterations**: The model converged early at 26 iterations.
+
+These results indicate that the model performs well in classifying Malaysian foods, with a high level of accuracy during both training and validation phases. The early convergence suggests that the model was able to learn the dataset effectively without overfitting.
+
+The graph below illustrates the training and validation accuracy over the iterations:
+
+The model is expected to perform reliably in real-world scenarios, provided the input images are clear and representative of the training data.
+
 ## Permissions
 
 The app requires camera access to capture food images. Ensure the following key is added to the `Info.plist` file:
